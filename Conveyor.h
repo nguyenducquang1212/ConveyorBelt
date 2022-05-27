@@ -15,7 +15,7 @@ TYPE randomType () {
 
 
 typedef struct {
-    int i = 0;
+    int i = 0;  
     Worker worker;
     Sensor sensor;
 } machine;
