@@ -1,7 +1,9 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/quangnd12/EmbeddedSystem/ConveyorBelt'
-clear
-g++ -Wall -g -pthread *.h *.cpp -o main
-./main
+g++ -Wall -Wextra -g -pthread -o main.o -c main.cpp -lwiringPi
+g++ -Wall -Wextra -g -pthread -o Conveyor.o -c Conveyor.cpp -lwiringPi
+g++ -Wall -Wextra -g -pthread -o Sensor.o -c Sensor.cpp -lwiringPi
+g++ -Wall -Wextra -g -pthread -o Worker.o -c Worker.cpp -lwiringPi
+g++ -Wall -Wextra -g -pthread -o main main.o Conveyor.o Sensor.o Worker.o -lwiringPi
 make: Leaving directory '/home/quangnd12/EmbeddedSystem/ConveyorBelt'
  

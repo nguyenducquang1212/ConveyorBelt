@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 12 08:07:47 2022
+# Make data base, printed on Tue May 17 22:03:22 2022
 
 # Variables
 
@@ -28,6 +26,8 @@ XDG_SESSION_CLASS = user
 XDG_SESSION_TYPE = x11
 # environment
 VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 20)
+TARGET = main
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -47,11 +47,11 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/share/code/code
-# makefile (from 'Makefile', line 3)
-CFLAGS = -Wall -g -pthread
+_ = /usr/bin/dbus-update-activation-environment
+# makefile (from 'Makefile', line 17)
+CFLAGS = -Wall -Wextra -g
 # environment
-JOURNAL_STREAM = 8:45905
+JOURNAL_STREAM = 8:45558
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -67,11 +67,11 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=03d8a67a7958fbc34751e35b627c50fa
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=308f073b83062e838feab24362839a5a
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1581
+MANAGERPID = 1613
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -81,11 +81,11 @@ VSCODE_CWD = /home/quangnd12
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/quangnd12/.local/bin:/home/quangnd12/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/quangnd12/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/
+PATH = /home/quangnd12/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/quangnd12:@/tmp/.ICE-unix/1797,unix/quangnd12:/tmp/.ICE-unix/1797
+SESSION_MANAGER = local/quangnd12:@/tmp/.ICE-unix/1829,unix/quangnd12:/tmp/.ICE-unix/1829
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -95,7 +95,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 6f5cee9816b74905a7d545fef0fa4cb7
+INVOCATION_ID = 90e5c49a6aca4bad93d6c47ae0850b90
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -105,7 +105,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2228
+GIO_LAUNCHED_DESKTOP_FILE_PID = 21371
 # automatic
 %F = $(notdir $%)
 # environment
@@ -117,7 +117,7 @@ PWD = /home/quangnd12/EmbeddedSystem/ConveyorBelt
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1758
+SSH_AGENT_PID = 1789
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -133,7 +133,7 @@ VSCODE_CODE_CACHE_PATH = /home/quangnd12/.config/Code/CachedData/57fd6d0195bb9b9
 # environment
 LOGNAME = quangnd12
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 +F = $(notdir $+)
 # environment
@@ -142,6 +142,8 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
+# environment
+GIT_TOKEN = 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
 # environment
 LC_TIME = vi_VN
 # default
@@ -152,10 +154,12 @@ MAKECMDGOALS := all
 QT_IM_MODULE = ibus
 # environment
 SHLVL = 0
+# makefile (from 'Makefile', line 22)
+CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3b374599-d2d4-4163-a197-2a197a8ea9ae.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ea165338-edf5-4bac-af2d-d1d0991180d7.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -163,7 +167,7 @@ USER = quangnd12
 # environment
 LC_MONETARY = vi_VN
 # makefile
-.DEFAULT_GOAL := make
+.DEFAULT_GOAL := all
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
@@ -178,8 +182,6 @@ MAKE_COMMAND := make
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-add17656-1.67.0-main.sock
-# makefile (from 'Makefile', line 1)
-SOURCE_CODE = *.h *.cpp
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -192,6 +194,8 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = vi_VN
+# environment
+NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -220,6 +224,8 @@ WINDOWPATH = 2
 LC_IDENTIFICATION = vi_VN
 # environment
 LITEX_ENV_VIVADO = /tools/Xilinx/Vivado/2018.3/
+# environment
+SYSTEMC_HOME = /usr/local/systemc-2.3.1
 # default
 .RECIPEPREFIX := 
 # environment
@@ -227,11 +233,11 @@ LC_ADDRESS = vi_VN
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2228
+VSCODE_PID = 20884
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=03d8a67a7958fbc34751e35b627c50fa
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=308f073b83062e838feab24362839a5a
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=18/134=13%
+# Load=113/1024=11%, Rehash=0, Collisions=18/143=13%
 
 # Pattern-specific Variable Values
 
@@ -239,9 +245,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=03d8a67a7958fbc34751e35
 
 # Directories
 
-# . (device 2068, inode 2755218): 13 files, no impossibilities.
+# . (device 2068, inode 2755218): 20 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -250,16 +256,55 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=03d8a67a7958fbc34751e35
 # Files
 
 # Not a target:
-all:
-#  Command line target.
+Conveyor.h:
 #  Implicit rule search has been done.
+#  Last modified 2022-05-12 23:12:04.989051437
+#  File has been updated.
+#  Successfully updated.
+
+all: main.o Conveyor.o Sensor.o Worker.o
+#  Command line target.
+#  Implicit rule search has not been done.
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 26):
+	$(CC) $(CFLAGS) -pthread -o $(TARGET) main.o Conveyor.o Sensor.o Worker.o -lwiringPi
+
+Worker.o: Worker.h Sensor.h library.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 38):
+	$(CC) $(CFLAGS) -pthread -o Worker.o -c Worker.cpp -lwiringPi
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-10 18:50:29.881025624
+#  Last modified 2022-05-12 21:51:00.560562255
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 21:52:29.621164848
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Sensor.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-09 10:21:18.420000324
 #  File has been updated.
 #  Successfully updated.
 
@@ -269,38 +314,90 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-make:
+Conveyor.o: Conveyor.h Sensor.h Worker.h library.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 6):
-	clear
-	g++ $(CFLAGS) $(SOURCE_CODE) -o main
+#  recipe to execute (from 'Makefile', line 32):
+	$(CC) $(CFLAGS) -pthread -o Conveyor.o -c Conveyor.cpp -lwiringPi
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	chmod +x main
 	./main
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	rm main.o main
-	clear
+#  recipe to execute (from 'Makefile', line 45):
+	rm -r main main.o Conveyor.o Sensor.o Worker.o
+
+# Not a target:
+Worker.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-10 01:19:18.765346393
+#  File has been updated.
+#  Successfully updated.
+
+main.o: main.cpp Conveyor.h library.h Sensor.h Worker.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := main.cpp Conveyor.h library.h Sensor.h Worker.h
+# automatic
+# | := 
+# automatic
+# < := main.cpp
+# automatic
+# ^ := main.cpp Conveyor.h library.h Sensor.h Worker.h
+# automatic
+# ? := main.cpp Conveyor.h library.h Sensor.h Worker.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'Makefile', line 29):
+	$(CC) $(CFLAGS) -pthread -o main.o -c main.cpp -lwiringPi
+
+Sensor.o: Sensor.h library.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	$(CC) $(CFLAGS) -pthread -o Sensor.o -c Sensor.cpp -lwiringPi
+
+# Not a target:
+library.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 23:11:02.648625309
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=15/1024=1%, Rehash=0, Collisions=3/49=6%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 176 B / avg = 8 B
-# current buf: size = 8162 B / used = 176 B / count = 20 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 349 B / avg = 11 B
+# current buf: size = 8162 B / used = 349 B / count = 31 / avg = 11 B
 
-# strcache performance: lookups = 26 / hit rate = 23%
+# strcache performance: lookups = 62 / hit rate = 50%
 # hash-table stats:
- 
-# Load=20/8192=0%, Rehash=0, Collisions=1/26=4%
-# Finished Make data base on Thu May 12 08:07:47 2022
+# Load=31/8192=0%, Rehash=0, Collisions=1/62=2%
+# Finished Make data base on Tue May 17 22:03:22 2022
 
  
